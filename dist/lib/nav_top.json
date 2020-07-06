@@ -1,0 +1,341 @@
+[
+  {
+    "id": 1,
+    "name": "小米手机",
+    "list": [
+      {
+        "list_id": 101,
+        "list_name": "小米10 青春版 5G",
+        "list_model":"AC1900双频无线路由器",
+        "list_price": 2099,
+        "list_url": "http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/3bf20f1df3f2e22c5b29ff07634f3c59.png"
+      },
+      {
+        "list_id": 102,
+        "list_name": "小米10 Pro",
+        "list_model":"AC1200双频无线路由器",
+        "list_price": 4999,
+        "list_url": "http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/82ddffd7562c54f9166fa876c143ff22.png"
+      },
+      {
+        "list_id": 103,
+        "list_name": "小米10",
+        "list_model":"AC1200双频无线路由器",
+        "list_price": 3799,
+        "list_url": "http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/a4a76ee684e51f0ee531ef3dc7f0aeaf.png"
+      },
+      {
+        "list_id": 104,
+        "list_name": "小米CC9",
+        "list_model":"AC1200双频千兆无线路由器",
+        "list_price": 1499,
+        "list_url": "http://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/f515ab05232ed14ccd78ec67e024495a.png"
+      },
+      {
+        "list_id": 105,
+        "list_name": "小米CC9e",
+        "list_model":"AC2600双频板阵天线千兆无线路由器",
+        "list_price": 1099,
+        "list_url": "http://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/df9b3e7a562e02a33eb069b3f0119815.png"
+      },
+      {
+        "list_id": 106,
+        "list_name": "小米CC9 美图定制版",
+        "list_model":"AC2600双频板阵天线千兆无线路由器",
+        "list_price": 1999,
+        "list_url": "http://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/b02f50c9dd2e01c139a06a12502755ef.png"
+      }
+    
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Redmi 红米",
+    "list": [
+      {
+        "list_id": 201,
+        "list_name": "Redmi 9",
+        "list_model":"8口全千兆以太网PoE交换机",
+        "list_price": 799,
+        "list_url": "http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/9ddc8849eaf164aac333bfd10627867f.png"
+      },
+      {
+        "list_id": 202,
+        "list_name": "Redmi 10X 4G",
+        "list_model":"双核多WAN口千兆企业VPN路由器",
+        "list_price": 999,
+        "list_url": "http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/cfbedb76699240a6c9a3f875b930983c.png"
+      },
+      {
+        "list_id": 203,
+        "list_name": "Redmi 10X 5G 系列",
+        "list_model":"PoE•AC一体化千兆VPN路由器",
+        "list_price": 1599,
+        "list_url": "http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/6a6548361871303764d6c66142074524.png"
+      },
+      {
+        "list_id": 204,
+        "list_name": "Redmi K30 Pro",
+        "list_model":"AC1800四频高密度无线吸顶式AP",
+        "list_price": 2699,
+        "list_url": "http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/0203f4e7dafcc0c9016a1b48556abf30.jpg"
+      },
+      {
+        "list_id": 205,
+        "list_name": "Redmi K30 Pro 变焦版",
+        "list_model":"AC1200双频千兆无线面板式AP",
+        "list_price": 3799,
+        "list_url": "http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/e95616fd1620e469386f007eeab1c763.jpg"
+      },
+      {
+        "list_id": 206,
+        "list_name": "Redmi K30",
+        "list_model":"AC1200双频千兆无线面板式AP",
+        "list_price": 1499,
+        "list_url": "http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/cff2977b8aab1e43b94b2f00083f4ae1.jpg"
+      }
+      
+    ]
+  },
+  {
+    "id": 3,
+    "name": "电视",
+    "list": [
+      {
+        "list_id": 301,
+        "list_name": "小米电视 大师 65英寸OLED",
+        "list_model":"AC5400三频方阵千兆无线路由器",
+        "list_price": 12999,
+        "list_url": "http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ea3390a20547c7298a258528e4aa69ad.png"
+      },
+      {
+        "list_id": 302,
+        "list_name": "Redmi 智能电视 MAX 98",
+        "list_model":"AC2600双频板阵千兆无线路由器",
+        "list_price": 19999,
+        "list_url": "http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/0112cb7e2ea8489fbd36ce3a781d5232.jpg"
+      },
+      {
+        "list_id": 303,
+        "list_name": "小米电视4A 60英寸",
+        "list_model":"AC2600双频板阵千兆无线路由器",
+        "list_price": 1999,
+        "list_url": "http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/f0f2d1079c767a834f098dd824bb6fee.png"
+      },
+      {
+        "list_id": 304,
+        "list_name": "Redmi 智能电视 X55",
+        "list_model":"AC1200双频方阵无线路由器",
+        "list_price": 2199,
+        "list_url": "http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/70f6c0c28c61e8585805565e5e16da84.png"
+      },
+      {
+        "list_id": 305,
+        "list_name": "Redmi 红米电视 70英寸",
+        "list_model":"全家通•智享路由",
+        "list_price": 2999,
+        "list_url": "http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/6917267948c54c647d2009a98637aac6.jpg"
+      },
+      {
+        "list_id": 306,
+        "list_name": "小米壁画电视 65英寸",
+        "list_model":"全家通•智享路由",
+        "list_price": 6999,
+        "list_url": "http://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/00f597a8725eee9245e383c35cd4f7b6.jpg"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "name": "笔记本",
+    "list": [
+      {
+        "list_id": 401,
+        "list_name": "RedmiBook 16 锐龙版",
+        "list_model":"企业级AC2600双频无线VPN路由器",
+        "list_price": 3599,
+        "list_url": "http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/3e6c9a677acbb3b0c75d4d0d83e8a695.png"
+      },
+      {
+        "list_id": 402,
+        "list_name": "RedmiBook 14 Ⅱ 锐龙版",
+        "list_model":"企业级AC1300双频无线VPN路由器",
+        "list_price": 3599,
+        "list_url": "http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/e27b3211230c2b8c21c0ef4efcbc17bc.png"
+      },
+      {
+        "list_id": 403,
+        "list_name": "RedmiBook 13 锐龙版",
+        "list_model":"企业级AC1200双频无线VPN路由器",
+        "list_price": 3599,
+        "list_url": "http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/6b5ffee3ecc822e9f85039df2d0ad68d.png"
+      },
+      {
+        "list_id": 404,
+        "list_name": "RedmiBook 13",
+        "list_model":"企业级AC4300三频无线VPN路由器",
+        "list_price": 4199,
+        "list_url": "http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/6abc701fb3cf48f2c7a3fd5ef053529a.jpg"
+      },
+      {
+        "list_id": 405,
+        "list_name": "小米笔记本Pro 15",
+        "list_model":"450M无线企业VPN路由器",
+        "list_price": 5299,
+        "list_url": "http://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/d712f71b3c4a3b562601c2b956a660ad.png"
+      },
+      {
+        "list_id": 406,
+        "list_name": "RedmiBook 14",
+        "list_model":"450M无线企业VPN路由器",
+        "list_price": 3999,
+        "list_url": "http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/6a25f895ad6019c3fae32fd1f48a2c7c.png"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "name": "家电",
+    "list": [
+      {
+        "list_id": 501,
+        "list_name": "米家互联网空调C1（一级能效）",
+        "list_model":"200万云台无线网络摄像机",
+        "list_price": 2199,
+        "list_url": "http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/03dc85cd792904ddc8027b2d781beed8.png"
+      },
+      {
+        "list_id": 502,
+        "list_name": "米家互联网空调（一级能效）",
+        "list_model":"200万云台无线网络摄像机",
+        "list_price": 2099,
+        "list_url": "http://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/e06b219c5bced9256467b17738a943c6.png"
+      },
+      {
+        "list_id": 503,
+        "list_name": "Redmi全自动波轮洗衣机1A",
+        "list_model":"全景无线网络摄像机",
+        "list_price": 799,
+        "list_url": "http://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/c5d772b7c2a159c3ed7d4e31bd293f18.jpg"
+      },
+      {
+        "list_id": 504,
+        "list_name": "米家互联网洗烘一体机",
+        "list_model":"全景无线网络摄像机",
+        "list_price": 2099,
+        "list_url": "http://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/11b8bca444aba2994fe852993eac9203.png"
+      },
+      {
+        "list_id": 505,
+        "list_name": "米家风冷对开门冰箱 483L",
+        "list_model":"全景无线网络摄像机",
+        "list_price": 2199,
+        "list_url": "http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/b7a4e3ff7919ca2407ad970b78abd09a.jpg"
+      },
+      {
+        "list_id": 506,
+        "list_name": "米家两门冰箱 160L",
+        "list_model":"全景无线网络摄像机",
+        "list_price": 899,
+        "list_url": "http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/40ad6e8398095e97309a5538b516a2de.jpg"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "name": "路由器",
+    "list": [
+      {
+        "list_id": 601,
+        "list_name": "Redmi路由器 AX5",
+        "list_model":"200万云台无线网络摄像机",
+        "list_price": 249,
+        "list_url": "http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/681a92d3e5f03a109558396c99f6a4df.png"
+      },
+      {
+        "list_id": 602,
+        "list_name": "小米路由器 AX1800",
+        "list_model":"200万云台无线网络摄像机",
+        "list_price": 329,
+        "list_url": "http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/27da43294889d049a111e5ff2cdfafe7.png"
+      },
+      {
+        "list_id": 603,
+        "list_name": "小米AIoT路由器 AX3600",
+        "list_model":"全景无线网络摄像机",
+        "list_price": 599,
+        "list_url": "http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/359d3c63cc159949d8fe147a11b4bc40.png"
+      },
+      {
+        "list_id": 604,
+        "list_name": "Redmi路由器AC2100",
+        "list_model":"200万云台无线网络摄像机",
+        "list_price": 169,
+        "list_url": "http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/aa1e0a4860cf40d34e1192d86691c82c.png"
+      },
+      {
+        "list_id": 605,
+        "list_name": "小米路由器AC2100",
+        "list_model":"200万云台无线网络摄像机",
+        "list_price": 229,
+        "list_url": "http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/5dd23c09b7eb6471968537fdce629194.png"
+      },
+      {
+        "list_id": 606,
+        "list_name": "小米路由器 Mesh",
+        "list_model":"全景无线网络摄像机",
+        "list_price": 999,
+        "list_url": "http://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/ec5be5f93ac0118aeec27b8df4337fc9.jpg"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "name": "智能硬件",
+    "list": [
+      {
+        "list_id": 701,
+        "list_name": "小米智能摄像机 云台版",
+        "list_model":"200万云台无线网络摄像机",
+        "list_price": 189,
+        "list_url": "http://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/2a500be4264c692899b25d86c16403f7.jpg"
+      },
+      {
+        "list_id": 702,
+        "list_name": "小米小爱老师",
+        "list_model":"200万云台无线网络摄像机",
+        "list_price": 499,
+        "list_url": "http://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/e3fb0886fdb13e5ae784b9713b9a0038.jpg"
+      },
+      {
+        "list_id": 703,
+        "list_name": "小米米家智能门锁",
+        "list_model":"全景无线网络摄像机",
+        "list_price": 1299,
+        "list_url": "http://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/5630aa997c82409ee33b2814c7eb2244.jpg"
+      },
+      {
+        "list_id": 704,
+        "list_name": "Redmi小爱触屏音箱 8",
+        "list_model":"200万云台无线网络摄像机",
+        "list_price": 349,
+        "list_url": "http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/dccc32d8e36685485fa89e0f2a580975.png"
+      },
+      {
+        "list_id": 705,
+        "list_name": "小爱触屏音箱",
+        "list_model":"全景无线网络摄像机",
+        "list_price": 199,
+        "list_url": "http://cdn.cnbj0.fds.api.mi-img.com/b2c-mimall-media/f6e585a4bf5c0f744ca60f19ecd6fadf.jpg"
+      },
+      {
+        "list_id": 706,
+        "list_name": "Redmi小爱音箱 Play",
+        "list_model":"全景无线网络摄像机",
+        "list_price": 79,
+        "list_url": "http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/17c0c91317ec0def3ecc072fa9480192.png"
+      }
+    ]
+  }
+]
+

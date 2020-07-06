@@ -1,0 +1,143 @@
+.header{
+    width:100%;
+    height:80px;
+}
+
+.header .container{
+    width:1200px;
+    margin:0 auto;
+}
+
+.header .container img{
+    width:237px;
+    height:20px;
+    margin:30px 123px 0 0;
+    display:inline-block;
+}
+
+.register{
+    width: 100%;
+    height: 588px;
+    background: url(https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/aece569d6689b4c461bb53efd9eea9c7.jpg);
+    position: absolute;
+    left: 0;
+    top: 98px;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+.register-container{
+    width:500px;
+    background-color:#fff;
+    margin-right:-60px;
+    float:right;
+    
+}
+.register-container-titile{
+    padding:40px 0 0;
+    font-size:24px;
+    color:#ff6700;
+    line-height:40px;
+    text-align:center;
+    font-weight:700;
+}
+
+.account-tab{
+    width:400px;
+    height:32px;
+    margin:36px auto 0;
+}
+
+.account-tab-item{
+    width:50%;
+    height:100%;
+    float:left;
+    font-size:14px;
+    color:#333;
+    text-align:center;
+    line-height:32px;
+    box-sizing:border-box;
+    border-bottom:1px solid #CCC;cursor:pointer;
+}
+
+.account-tab-item.active{
+    color:#ff6700;
+    border-bottom:1px solid #ff6700
+}
+
+.account-phone{
+    width:100%;
+    margin:0 auto
+}
+
+.account-register-phone{
+    width:400px;
+    height:48px;
+    margin:24px auto 0;
+    position:relative
+}
+
+.account-register-phone-input{
+    font-size:14px;
+    color:#333;
+    line-height:20px;
+    border:none;
+    padding-bottom:9px;width:100%;
+    border-bottom:1px solid #ccc
+}
+
+.account-register-phone-contact-img{width:16px;height:16px;position:absolute;right:0;bottom:12px}
+
+
+
+.account-register-phone-password{width:400px;height:48px;margin:24px auto 0;position:relative}
+
+.account-register-phone-password-input{font-size:14px;color:#333;line-height:20px;border:none;padding-bottom:9px;width:100%;border-bottom:1px solid #ccc}
+
+.account-register-phone-password2{width:400px;height:48px;margin:24px auto 0;position:relative}
+
+
+.account-register-phone-password2-input{font-size:14px;color:#333;line-height:20px;border:none;padding-bottom:9px;width:100%;border-bottom:1px solid #ccc}
+
+
+
+.account-register-phone-code{width:400px;height:48px;margin:24px auto 0;position:relative}
+.account-register-phone-code-input{font-size:14px;color:#333;line-height:20px;border:none;padding-bottom:9px;width:100%;border-bottom:1px solid #ccc}
+
+.account-register-phone-code-img{position:absolute;top:-5px;right:0;width:100px;height:30px;display:block;cursor:pointer;font-family:Arial,宋体; 
+    font-style:italic;border:none;letter-spacing:3px;outline: none;}
+.account-register-phone-code-img:focus{border-bottom: none;}
+
+.account-register-phone-submit{width:400px;height:48px;margin:48px auto 24px;background-color:#ff6700;border-radius:2px;cursor:pointer}
+
+.account-register-submit-word{font-size:16px;color:#FFF;text-align:center;line-height:48px;font-weight:700}
+
+
+
+.account-mail{width:100%;margin:0 auto}
+.account-mail.visible{display: none;}
+
+.account-mail-contact{width:400px;height:48px;margin:24px auto 0;position:relative}
+/* .account-register-main-mail-contact-subtitle{font-size:12px;color:#999;margin-top:2px} */
+.account-mail-contact-input{font-size:14px;color:#333;line-height:20px;border:none;padding-bottom:9px;width:100%;border-bottom:1px solid #ccc}
+.account-mail-contact-img{width:16px;height:16px;position:absolute;right:0;bottom:12px}
+
+.account-mail-password{width:400px;height:48px;margin:24px auto 0;position:relative}
+
+.account-mail-password-input{font-size:14px;color:#333;line-height:20px;border:none;padding-bottom:9px;width:100%;border-bottom:1px solid #ccc}
+
+.account-mail-password2{width:400px;height:48px;margin:24px auto 0;position:relative}
+
+.account-mail-password2-input{font-size:14px;color:#333;line-height:20px;border:none;padding-bottom:9px;width:100%;border-bottom:1px solid #ccc}
+
+.account-mail-code{width:400px;height:48px;margin:24px auto 0;position:relative}
+
+.account-mail-code-input{font-size:14px;color:#333;line-height:20px;border:none;padding-bottom:9px;width:100%;border-bottom:1px solid #ccc}
+.account-mail-code-img:focus{border-bottom: none;}
+.account-mail-code-img{position:absolute;top:-5px;right:0;width:100px;height:30px;display:block;cursor:pointer;font-family:Arial,宋体; 
+    font-style:italic;border:none;letter-spacing:3px;outline: none;}
+
+.account-mail-submit{width:400px;height:48px;margin:48px auto 24px;background-color:#ff6700;border-radius:2px;cursor:pointer}
+.account-register-main-submit{width:400px;height:48px;margin:48px auto 24px;background-color:#ff6700;border-radius:2px;cursor:pointer}
+.account-register-main-submit-word{font-size:16px;color:#FFF;text-align:center;line-height:48px;font-weight:700}
+
+button:focus{outline:none}

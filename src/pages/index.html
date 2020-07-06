@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    a{text-decoration: none;}
+    .list-show{
+      width: 700px;
+      height: 500px;
+      position: absolute;
+      left: 200px;
+      top: 0px;
+      z-index: 999;
+      display: none;
+      background-color: white;
+      /* display: flex; */
+    }
+    .list-show-inner{
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .list-show-inner >ul{
+      padding-left:20px ;
+      text-decoration: none;
+    }
+    .list-show-inner >ul >li{
+      width: 212px;
+      font-size: 13px;
+      line-height: 40px;
+      padding: 20px 0;
+    }
+
+    .list-show-inner >ul >li >a{
+      text-decoration: none;
+      color: #666;
+      
+    }
+    .list-show-inner >ul >li >a:hover{
+      text-decoration: none;
+      color: #ff6700;
+      cursor: pointer;
+    }
+    .list-show-inner >ul >li >a >p{
+      float: right;
+      margin-right: 8px;
+    }
+    .list-show-inner >ul >li >a >div>img{
+      height: 40px;
+      width: 40px;
+      display: inline-block;
+    }
+    .list-show-inner >ul >li >a >div>span{
+      font-size: 13px;
+    }
+
+    .container{
+      width: 1200px;
+      margin: 0 auto;
+    }
+    .container3{
+      width: 1200px;
+      margin: 0 auto;
+    }
+    .footer-promise {
+    width: 100%;
+    height: 120px;
+    min-width: 1200px;
+    margin: 28px 0 0;
+}
+
+
+.footer-promise .footer-promise-img {
+    width: 100%;
+    height: 120px;
+    display: block;
+    background-color: #FFF;
+    background-position: center center;
+    background-size: 100% 100%;
+}
+  </style>
+  <link rel="stylesheet" href="../lib/bootstrap/dist/css/bootstrap.css">
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/common.min.css">
+  <link rel="stylesheet" href="../css/index.css">
+  <link rel="stylesheet" href="../lib/bootstrap/fonts/glyphicons-halflings-regular.svg">
+  <link rel="stylesheet" href="../lib/jquery-ui/jquery-ui.min.css">
+  <link rel="stylesheet" href="../lib/swiper/css/swiper.min.css">
+  <link rel="stylesheet" href="../css/product-show.css">
+  <link rel="stylesheet" href="../css/footer.css">
+</head>
+<body>
+
+  <!-- <h1>TP-Link首页</h1> -->
+
+  <div class="layout-header-nav">
+      <div class="container3"> 
+          <!-- <p class="header-benefit">
+              商城优惠大酬宾，全场满59元包邮
+          </p> -->
+          <div class="header-nav-left">
+              <a href="#" class="header-nav-left-item">小米商城</a>
+              <span class="header-nav-left-item">|</span>
+              <a href="" class="header-nav-left-item">MIUI</a>
+              <span class="header-nav-left-item">|</span>
+              <a href="" class="header-nav-left-item">IoT</a>
+              <span class="header-nav-left-item">|</span>
+              <a href="" class="header-nav-left-item">云服务</a>
+              <span class="header-nav-left-item">|</span>
+              <a href="" class="header-nav-left-item">金融</a>
+              <span class="header-nav-left-item">|</span>
+              <a href="" class="header-nav-left-item">有品</a>
+              <span class="header-nav-left-item">|</span>
+              <a href="" class="header-nav-left-item">小爱开放平台</a>
+              <span class="header-nav-left-item">|</span>
+              <a href="" class="header-nav-left-item">企业团购</a>
+              <span class="header-nav-left-item">|</span>
+              <a href="" class="header-nav-left-item">资质证照</a>
+              <span class="header-nav-left-item">|</span>
+              <a href="" class="header-nav-left-item">协议规则</a>
+              <span class="header-nav-left-item">|</span>
+              <a href="" class="header-nav-left-item">下载app</a>
+              <span class="header-nav-left-item">|</span>
+              <a href="" class="header-nav-left-item">Select Location</a>
+          </div>
+          <div class="header-cart">
+              <a href="./cart.html" class="header-cart-link">
+                  <div class="header-cart-button">
+                      <div class="header-cart-button-img"></div>
+                      <span class="header-cart-button-word">
+                        购物车
+                      </span>
+                  </div>
+              </a>
+          </div>
+          <div class="header-nav">
+              <a href="./login.html" class="header-nav-item login">登录</a>
+              <span class="header-nav-item">|</span>
+              <a href="./register.html" class="header-nav-item">注册</a>
+              <span class="header-nav-item">|</span>
+              <a href="#" class="header-nav-item" style="margin-right: 5px;">消息通知</a>
+          </div>
+      </div>
+  </div>
+  
+  <div class="layout-header-search">
+    <div class="container3">
+        <a href="./index.html">
+          <img src="" alt="" class="header-logo">
+        </a>
+        
+          <div class="layout-banner-nav">
+            <div class="banner-nav-list">
+                <div class="container2">
+                    
+                </div>
+            </div>
+            <div class="banner-nav-list-last">
+              <a href="" class="banner-nav-list-item-last">服务</a>
+              <a href="" class="banner-nav-list-item-last">社区</a>
+            </div>
+          </div>
+        <form action="" class="header-search">
+              <input type="text" class="header-search-input" autocomplete="off">
+              <input type="button" class="header-search-submit" value="">
+              
+        </form>
+    </div>
+
+  </div>
+
+  <div class="nav_box"> 
+      <ul class="container">
+
+      </ul>
+  </div>
+
+
+  
+  <div class="banner-outer">
+    <div class="banner container3">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/e472d8648df665bc0b2047252685cef0.jpg" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/8e80e18933cd5ea732eb611a6894804b.jpg" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/9041ff833d79b6e29ca5d4c65fcfd345.jpg" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ad9c1cb79a2eeb2d5ccf54dfa9782032.jpg" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/6ef43cf9f138a7fc3a39273d7e3d13b6.jpg" style="height: 500px;" alt="">
+          </div>
+        </div>
+        
+        <div class="swiper-pagination"></div>
+
+      
+        <div class="swiper-button-prev prev"></div>
+        <div class="swiper-button-next"></div>
+
+        
+      </div>
+
+      <div class="nav_list">
+        <ul>
+          <li>手机 电话卡 <p>></p></li>
+          <li>电视 盒子 <p>></p></li>
+          <li>笔记本 显示器 平板 <p>></p></li>
+          <li>家电 插线板 <p>></p></li>
+          <li>出行 穿戴 <p>></p></li>
+          <li>智能 路由器 <p>></p></li>
+          <li>电源 配件 <p>></p></li>
+          <li>健康 儿童 <p>></p></li>
+          <li>耳机 音箱 <p>></p></li>
+          <li>生活 箱包 <p>></p></li>
+        </ul>
+      </div>
+
+      <div class="list-show" >
+          <div class="list-show-inner">
+              <ul >
+                <li><a href="">Wi-Fi6无线路由器 <p>></p></a></li>
+                <li><a href="">⦁ AX3000双频千兆Wi-Fi6无线路由器 </a></li>
+              </ul>
+              <ul >
+                <li><a href="">Wi-Fi6无线路由器 <p>></p></a></li>
+                <li><a href="">⦁ AX3000双频千兆Wi-Fi6无线路由器 </a></li>
+              </ul>
+          </div>
+          <!-- <div class="list-show-inner">
+            <ul >
+              <li><a href="">Wi-Fi6无线路由器 <p>></p></a></li>
+              <li><a href="">⦁ AX3000双频千兆Wi-Fi6无线路由器 </a></li>
+            </ul>
+        </div> -->
+          
+      </div>
+    </div>
+  </div>
+
+  
+  <div class="outer">
+    <div class="hot-products">
+        <div class="container3">
+            <ul class="hot-products-list">
+              <li class="hot-products-list-item">
+                <div class="hot-products-list-left">
+                 <ul>
+                   <li>
+                     <a href="#">
+                        <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/82abdba456e8caaea5848a0cddce03db.png" alt="">
+                        <p>小米秒杀</p>
+                     </a>
+                   </li>
+
+                   <li>
+                    <a href="#">
+                      <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/806f2dfb2d27978e33fe3815d3851fa3.png" alt="">
+                      <p>企业团购</p>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#">
+                      <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/eded6fa3b897a058163e2485532c4f10.png" alt="">
+                      <p>F码通道</p>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#">
+                      <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/43a3195efa6a3cc7662efed8e7abe8bf.png" alt="">
+                      <p>米粉卡</p>
+                    </a>
+                  </li>
+                  
+                  <li>
+                    <a href="#">
+                      <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/f4846bca6010a0deb9f85464409862af.png" alt="">
+                      <p>以旧换新</p>
+                    </a>
+                  </li>
+
+                  <li>
+                    <a href="#">
+                      <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/9a76d7636b08e0988efb4fc384ae497b.png" alt="">
+                      <p>话费充值</p>
+                    </a>
+                  </li>
+                 </ul>
+                </div>
+              </li>
+
+              <li class="hot-products-list-item"><a href="">
+                <div class="hot-products-list-item-inner">
+                  <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/d158f243b54d5ec68dd2ac72bd24555d.jpg" alt="">
+                </div>
+              </a></li>
+              <li class="hot-products-list-item"><a href="">
+                <div class="hot-products-list-item-inner">
+                  <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/fbff319c7dd00e75c9758acf248d3784.jpg" alt="">
+                </div>
+              </a></li>
+              <li class="hot-products-list-item"><a href="">
+                <div class="hot-products-list-item-inner">
+                  <img src="https://cdn.cnbj1.fds.api.mi-img.com/mi-mall/816a66edef10673b4768128b41804cae.jpg" alt="">
+                </div>
+              </a></li>
+            </ul>
+        </div>
+    </div>
+  </div>
+  <div class="product-show"> 
+      <div class="container3">
+          <ul class="product-show-list">
+              <li class="product-show-list-item">
+
+                  <a href="" class="product-show-list-item-img">
+                    <img src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/17ae6ffbdd4156119e41dec7d85ebced.jpeg" alt="" class="product-show-list-item-banner" style="width: 1200px;">
+                  </a>
+                  <div class="product-show-list-item-header">
+                      <h3 class="product-show-list-item-header-title">手机</h3>
+                      <div class="product-show-list-item-header-nav"> 
+                          <a href="" class="product-show-list-item-header-nav-item">查看全部</a>
+                      </div>
+                  </div>
+                  
+
+                  <ul class="product-show-list-item-presentation">
+                      <li class="product-show-list-item-presentation-left">
+                          <a href="" class="product-show-list-item-presentation-left">
+                            <img class="product-show-list-item-presentation-left-img" src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/574c6643ab91c6618bfb2d0e2c761d0b.jpg" alt="">
+                          </a>
+                      </li>
+                      <li class="product-show-list-item-presentation-each">
+                        <a href="" class="product-show-list-item-presentation-each-link">
+                          <div class="product-show-list-item-presentation-each-container">
+                            <img class="product-show-list-item-presentation-each-container-img" src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/8729282b199b3ec51e31c1b6b15f3f93.jpg" alt="">
+                            <p class="product-show-list-item-presentation-each-container-model">小米10 青春版 5G</p>
+                            <p class="product-show-list-item-presentation-each-container-description">50倍潜望式变焦 / 轻薄5G手机</p>
+                            <p class="product-show-list-item-presentation-each-container-price">
+                              <span>1899元起</span>
+                              <span class="product-show-list-item-presentation-each-container-price-before">2099元</span>
+                            </p>
+                          </div>
+                        </a>
+                      </li>
+
+                      <li class="product-show-list-item-presentation-each">
+                        <a href="" class="product-show-list-item-presentation-each-link">
+                          <div class="product-show-list-item-presentation-each-container">
+                            <img class="product-show-list-item-presentation-each-container-img" src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/0099822e42b4428cb25c4cdebc6ca53d.jpg" alt="">
+                            <p class="product-show-list-item-presentation-each-container-model">小米10</p>
+                            <p class="product-show-list-item-presentation-each-container-description">骁龙865/1亿像素相机</p>
+                            <p class="product-show-list-item-presentation-each-container-price">
+                              <span>3799元起</span>
+                              <span class="product-show-list-item-presentation-each-container-price-before">3999元</span>
+                            </p>
+                          </div>
+                        </a>
+                      </li>
+
+                      <li class="product-show-list-item-presentation-each">
+                        <a href="" class="product-show-list-item-presentation-each-link">
+                          <div class="product-show-list-item-presentation-each-container">
+                            <img class="product-show-list-item-presentation-each-container-img" src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/c1aafa589258a4d9fdf49831b457418d.jpg" alt="">
+                            <p class="product-show-list-item-presentation-each-container-model"> Redmi K30 Pro</p>
+                            <p class="product-show-list-item-presentation-each-container-description">双模5G，骁龙865，弹出全面屏</p>
+                            <p class="product-show-list-item-presentation-each-container-price">
+                              <span>2699元起</span>
+                              <span class="product-show-list-item-presentation-each-container-price-before">2999元</span>
+                            </p>
+                          </div>
+                        </a>
+                      </li>
+
+                      <li class="product-show-list-item-presentation-each">
+                        <a href="" class="product-show-list-item-presentation-each-link">
+                          <div class="product-show-list-item-presentation-each-container">
+                            <img class="product-show-list-item-presentation-each-container-img" src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/7cfdbce40301133a287e9e57faa37bdf.jpg" alt="">
+                            <p class="product-show-list-item-presentation-each-container-model">Redmi K30 Pro 变焦版</p>
+                            <p class="product-show-list-item-presentation-each-container-description">双模5G，骁龙865，弹出全面屏</p>
+                            <p class="product-show-list-item-presentation-each-container-price">
+                              <span>3799元</span>
+                            </p>
+                          </div>
+                        </a>
+                      </li>
+
+                      <li class="product-show-list-item-presentation-each">
+                        <a href="" class="product-show-list-item-presentation-each-link">
+                          <div class="product-show-list-item-presentation-each-container">
+                            <img class="product-show-list-item-presentation-each-container-img" src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/ccd09671448c4cdb4a3817f68f788662.jpg" alt="">
+                            <p class="product-show-list-item-presentation-each-container-model">小米10 Pro</p>
+                            <p class="product-show-list-item-presentation-each-container-description">50倍潜望式变焦 / 轻薄5G手机</p>
+                            <p class="product-show-list-item-presentation-each-container-price">
+                              <span>4999元</span> 
+                            </p>
+                          </div>
+                        </a>
+                      </li>
+
+                      <li class="product-show-list-item-presentation-each">
+                        <a href="" class="product-show-list-item-presentation-each-link">
+                          <div class="product-show-list-item-presentation-each-container">
+                            <img class="product-show-list-item-presentation-each-container-img" src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/d295c4fb500d163a7045dc715b47f808.jpg" alt="">
+                            <p class="product-show-list-item-presentation-each-container-model">小米10 青春版 5G</p>
+                            <p class="product-show-list-item-presentation-each-container-description">50倍潜望式变焦 / 轻薄5G手机</p>
+                            <p class="product-show-list-item-presentation-each-container-price">
+                              <span>1899元起</span>
+                              <span class="product-show-list-item-presentation-each-container-price-before">2099元</span>
+                            </p>
+                          </div>
+                        </a>
+                      </li>
+
+                      <li class="product-show-list-item-presentation-each">
+                        <a href="" class="product-show-list-item-presentation-each-link">
+                          <div class="product-show-list-item-presentation-each-container">
+                            <img class="product-show-list-item-presentation-each-container-img" src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/2c16238f786e4f93bdb175d7bf21aa47.jpg" alt="">
+                            <p class="product-show-list-item-presentation-each-container-model">Redmi 8</p>
+                            <p class="product-show-list-item-presentation-each-container-description">5000mAh超长续航</p>
+                            <p class="product-show-list-item-presentation-each-container-price">
+                              <span>799元</span>
+                              
+                            </p>
+                          </div>
+                        </a>
+                      </li>
+
+                      <li class="product-show-list-item-presentation-each">
+                        <a href="" class="product-show-list-item-presentation-each-link">
+                          <div class="product-show-list-item-presentation-each-container">
+                            <img class="product-show-list-item-presentation-each-container-img" src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/53641901fbc28cbcdb495b17fdf69e46.jpg" alt="">
+                            <p class="product-show-list-item-presentation-each-container-model">Redmi K30 5G</p>
+                            <p class="product-show-list-item-presentation-each-container-description">双模5G，120Hz流速屏</p>
+                            <p class="product-show-list-item-presentation-each-container-price">
+                              <span>1899元起</span>
+                              <span class="product-show-list-item-presentation-each-container-price-before">2299元</span>
+                            </p>
+                          </div>
+                        </a>
+                      </li>
+                      <!-- <li class="product-show-list-item-presentation-last">
+                        <a href="" class="product-show-list-item-presentation-last-link">
+                          <div class="product-show-list-item-presentation-last-advertise">
+                            <img class="product-show-list-item-presentation-last-advertise-img" src="http://www.tp-linkshop.com.cn/ProductImg200/527.png" alt="">
+                            <div class="product-show-list-item-presentation-last-advertise-box">
+                              <p class="product-show-list-item-presentation-last-advertise-box-model">AC1200双频无线路由器</p>
+                              <p class="product-show-list-item-presentation-last-advertise-box-description">信号稳定，百万用户经典之路</p>
+                              <p class="product-show-list-item-presentation-last-advertise-box-name">TL-WDR5620</p>
+                              <p class="product-show-list-item-presentation-last-advertise-box-price">￥109.9</p>
+                            </div>
+                          </div>
+                        </a>
+
+                        <a href="./list.html" class="product-show-list-item-presentation-last-link">
+                          <div class="product-show-list-item-presentation-last-more">
+                            <p class="product-show-list-item-presentation-last-more-word">浏览更多</p>
+                            <img class="product-show-list-item-presentation-last-more-img" src="http://www.tp-linkshop.com.cn/Content/themes/base/images/Home/go_gray.png" alt="">
+                          </div>
+                        </a>
+                      </li> -->
+                  </ul>
+              </li>
+          </ul>
+      </div>
+  </div>
+
+  <div class="footer-promise">
+      <div class="container3">
+          <img src="http://cdn.cnbj1.fds.api.mi-img.com/mi-mall/c3b86ede4dd31d7c126d56fbdde4f855.jpg" alt="" class="footer-promise-img">
+      </div>
+  </div>
+
+  <div class="layout-footer-service">
+    <div class="container3">
+    <ul class="footer-service">
+      <li class="footer-service-list">
+        <ul class="footer-service-list-item">
+          <li class="footer-service-list-item-word">
+            <p class="footer-service-list-item-word-title">购物指南</p>
+          </li>
+          <li class="footer-service-list-item-word">
+            <a href="" class="footer-service-list-item-word-link">购买流程</a>
+          </li>
+          <li class="footer-service-list-item-word">
+            <a href="" class="footer-service-list-item-word-link">购买流程</a>
+          </li>
+          <li class="footer-service-list-item-word">
+            <a href="" class="footer-service-list-item-word-link">购买流程</a>
+          </li>
+          <li class="footer-service-list-item-word">
+            <a href="" class="footer-service-list-item-word-link">购买流程</a>
+          </li>
+        </ul>
+      </li>
+      <li class="footer-service-list"></li>
+      <li class="footer-service-list"></li>
+      <li class="footer-service-list"></li>
+      <li class="footer-service-list"></li>
+    </ul>
+  </div>
+ </div>
+
+  <script src="../lib/jquery/dist/jquery.min.js"></script>
+  <script src="../lib/jquery-cookie/jquery.cookie.js"></script>
+  <script src="../lib/jquery-ui/jquery-ui.min.js"></script>
+  <script src="../lib/swiper/js/swiper.min.js"></script>
+  <script src="../js/index.js"></script>
+  <script src="../js/footer.js"></script>
+
+  <script>
+    $('.header-search-submit').click(function(){
+      window.location.href = './list.html'
+    })
+    console.log($.cookie('name'));
+
+    console.log($('.login'));
+    $(function() {
+        if ($.cookie('name')) {
+          console.log('用户登录')
+            $('.login').text($.cookie('name'));
+        }else{
+          console.log('用户未登录')
+        }
+    })
+
+    $('.header-cart').hover(function(){
+        $('.header-cart').addClass("active")
+    },function (){
+        $('.header-cart').removeClass("active")
+    }
+    )
+
+    var mySwiper = new Swiper ('.swiper-container', {
+        loop: true, // 循环模式选项
+        autoplay: {
+          delay: 3000
+        },
+        effect: 'fade',
+
+        //分页器
+        pagination: {
+          el: '.swiper-pagination',
+        },
+
+        //前进后退按钮
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+
+        // 滚动条
+        // scrollbar: {
+        //   el: '.swiper-scrollbar',
+        // },
+      })
+
+
+    getList()
+
+    function getList() {
+      $.ajax({
+        url: '../lib/nav_top.json',
+        dataType: 'json',
+        success: function (res) {
+          console.log(res)
+
+          // 准备一个空字符串
+          let str = ''
+
+          //渲染一级的 a
+          res.forEach(item => {
+            str += `<a class="banner-nav-list-item">${ item.name }</a>`
+          })
+
+          //填充到 container2 里面
+          $('.container2 ')
+            .html(str)
+            .on({
+              mouseenter: () => $('.nav_box').stop().slideDown(),
+              mouseleave: () => $('.nav_box').stop().slideUp()
+            })
+            .children('a') // 找到所有的一级菜单下的 a
+            .on('mouseover', function () {
+              // 5-1. 知道自己移入的时哪一个 a
+              const index = $(this).index()
+              // 5-2. 找到要渲染的数组
+              const list = res[index].list
+              // 5-3. 用我们找到的数组把 nav_box 位置渲染了就可以了
+              let str = ''
+
+              // 5-4. 进行组装
+              list.forEach(item => {
+                str += `
+                  <li>
+                    <div>
+                      <img src="${ item.list_url }" alt="">
+                    </div>
+                    <p class="title">${ item.list_name }</p>
+                    <span class="price">${ item.list_price }元起</span>
+                  </li>
+                `
+              })
+              // <p class="model">${item.list_model}</p>
+              // 5-5. 填充到页面里面
+              $('.nav_box > ul').html(str)
+            })
+
+          // 4-4. 给 nav_box 添加一个移入移出事件
+          $('.nav_box')
+            .on({
+              mouseover: function () { $(this).finish().show() },
+              mouseout: function () { $(this).finish().slideUp() }
+            })
+        }
+      })
+    }
+    //侧边导航栏渲染
+    getaside();
+    function getaside(){
+      $.ajax({
+        url:'../lib/nav.json',
+        dataType:'json',
+        success:function (res) {
+          
+
+          $('.nav_list > ul')
+              .on({
+                mouseenter: () => $('.list-show').stop().show(),
+                mouseleave: () => $('.list-show').stop().hide()
+              })
+              .children('li') // 找到所有的一级菜单下的 li
+              .on('mouseover', function () {
+                // 知道自己移入的时哪一个 li
+                const index = $(this).index()
+                //  找到要渲染的数组
+                const list = res[index].list
+          
+            let str=''
+            list.forEach(item => {
+              str += `
+                    <ul>
+                       
+                  `
+              //二级标题
+              // <li>
+              //           <a>${item.name}
+              //           <p>></p>
+              //           </a>
+              //           </li>
+        
+            item.list2.forEach(item2 => {
+              
+              
+                str +=`
+                  <li>
+                    <a>
+                      <div>
+                        <img src="${item2.img}">
+                        <span>${item2.goods}</span>
+                      </div>
+                    </a>
+                  </li>
+                `
+              })
+              str +=`
+              </ul>
+              `
+            })
+
+            //  渲染到页面上
+             $('.list-show-inner').html(str)
+          })
+          $('.list-show')
+            .on({
+              mouseover: function () { $(this).finish().show() },
+              mouseout: function () { $(this).finish().hide() }
+            })
+         
+        }
+      })
+    }
+  </script>
+</body>
+</html>
