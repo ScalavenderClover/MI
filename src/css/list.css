@@ -15,16 +15,16 @@
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 .box >ul >li{
-    width: 22%;
-    margin: 0 0 30px 30px;
-    border: 1px solid #E6E6E6;
+    
+    margin: 0 0 30px 0px;
+   
     cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 300px;
     flex-direction: column;
     background-color: white;
 }
@@ -83,16 +83,14 @@ a {
     width: 200px;
     height: 200px;
     position: relative;
-    margin: 32px 47px;
+    margin: 30px 35px;
 }
 .product-search-container-title {
     font-size: 16px;
     color: #333;
     line-height: 24px;
-    text-align: left;
-    width: 246px;
-    margin: 0 auto;
-    height: 48px;
+    text-align: center;
+    
 }
 
 .product-search-container {
@@ -107,10 +105,8 @@ a {
 .product-search-container-price {
     font-size: 14px;
     line-height: 20px;
-    color: #FF3232;
-    text-align: left;
-    /* float: left; */
-    margin-left: 24px;
-    padding-top: 20px;
-    padding-bottom: 30px;
+    color: #ff6700;
+    text-align: center;
+    padding-top: 5px;
+    padding-bottom: 20px;
 }

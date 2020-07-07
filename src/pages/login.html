@@ -135,7 +135,8 @@
 
                         // 发送请求到后端
                           console.log('验证成功');
-                          $.post('../server/login.php', $(form).serialize(), res => {
+                        //   $.post('../server/login.php', $(form).serialize(), res => {
+                          $.get('http://jx.xuzhixiang.top/ap/api/login.php', $(form).serialize(), res => {
                             console.log(res)
                             var result = JSON.stringify(res)
                             console.log(result)
@@ -146,7 +147,7 @@
                             } else {
                             // 登录成功
                             $.cookie('name', admin);
-                            window.location.href = './index.html'
+                            // window.location.href = './index.html'
                             }
                           }, 'json')
                         

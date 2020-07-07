@@ -236,23 +236,39 @@
                         // serialize() 快速获取表单输入的数据
                         //  $(form).serialize() 就能拿到这个 form 标签里面的表单数据
                         // console.log($(form).serialize())  // username=admin&password=123456
+                        var String = $(form).serialize()
+                        var submitData=String.split('&')
+                        console.log(submitData)
+                        let repeatUser 
+                         $.get('http://jx.xuzhixiang.top/ap/api/checkname.php',$(form).serialize(),res =>{
+                            console.log(res.code)
+                            
+                            if(res.code == 1){
+                                window.repeatUser= false
+                                
+                            }else{
+                                window.repeatUser = true
+                                
+                            }
+                        })
 
+                        console.log(repeatUser)
                         // 发送请求到后端
                           console.log('验证成功');
-                          $.post('../server/register.php', $(form).serialize(), res => {
-                            console.log(res)
-                            var result = JSON.stringify(res)
-                            console.log(result)
-                            var admin =res.username
-                            console.log(admin)
-                            if (result.code === 0) {
-                                console.log('登录失败')
-                            } else {
-                            // 登录成功
-                            $.cookie('name', admin);
-                            window.location.href = './index.html'
-                            }
-                          }, 'json')
+                        //   $.post('../server/register.php', $(form).serialize(), res => {
+                        //     console.log(res)
+                        //     var result = JSON.stringify(res)
+                        //     console.log(result)
+                        //     var admin =res.username
+                        //     console.log(admin)
+                        //     if (result.code === 0) {
+                        //         console.log('登录失败')
+                        //     } else {
+                        //     // 登录成功
+                        //     $.cookie('name', admin);
+                        //     window.location.href = './index.html'
+                        //     }
+                        //   }, 'json')
                         
                         }
                     

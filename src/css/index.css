@@ -43,7 +43,7 @@ a.header-nav-left-item:hover{color:#fff;text-decoration:none}
 
 
 .layout-banner-nav{background:#FFF;box-shadow:0 0 10px 0 rgba(0,0,0,.04);position: relative;margin-left: 200px;}
-.layout-banner-nav .banner-nav-list-item{font-size:16px;line-height:100px;color:#333;margin:0 20px 0 0;display:block;float:left}
+.layout-banner-nav .banner-nav-list-item{font-size:16px;line-height:100px;color:#333;padding:0 20px 0 0;display:block;float:left}
 /* .layout-banner-nav .banner-nav-list-item:first-of-type{margin-left:150px} */
 .layout-banner-nav .banner-nav-list-item:hover{color:#ff6700;}
 .layout-banner-nav .banner-nav-list .container2{display: left;}
