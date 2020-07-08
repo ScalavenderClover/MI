@@ -526,9 +526,9 @@
 
     console.log($('.login'));
     $(function() {
-        if ($.cookie('name')) {
+        if ($.cookie('username')) {
           console.log('用户登录')
-            $('.login').text($.cookie('name'));
+            $('.login').text($.cookie('username'));
         }else{
           console.log('用户未登录')
         }

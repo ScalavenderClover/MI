@@ -1,1 +1,53 @@
-"use strict";var info=JSON.parse(localStorage.getItem("goodsInfo"));function bindHtml(){$(".goodsInfo img").attr("src",info.list_url),$(".goodsInfo .goodsName").text(info.list_name),$(".goodsInfo .price").text("￥"+info.list_price)}info||(alert("页面不存在"),window.location.href="./list.html"),bindHtml(),$(".addCart").click(function(){if($.cookie("name")){console.log("用户登录");var o=JSON.parse(localStorage.getItem("cartList"))||[];if(o.some(function(o){return o.list_id===info.list_id})){for(var i=null,t=0;t<o.length;t++)if(o[t].list_id===info.list_id){i=o[t];break}i.number++,i.subtotal=i.number*i.list_price}else info.number=1,info.subtotal=info.list_price,info.isSelect=!1,o.push(info);localStorage.setItem("cartList",JSON.stringify(o))}else console.log("用户未登录"),window.location.href="./login.html"});
+let id = JSON.parse(localStorage.getItem('goodsId'))
+let uid = JSON.parse(localStorage.getItem('userInfo')).id
+
+var info = []
+console.log(id)
+getGoodsInfo()
+async function getGoodsInfo(){
+    await axios.get(
+        'http://jx.xuzhixiang.top/ap/api/detail.php',
+        {params:{id}}
+        ).then(function(res){
+            console.log(res)
+
+            var result = res.data.data
+
+            info = result
+            bindHtml(info)
+        })
+}
+
+
+function bindHtml(info) {
+$('.goodsInfo img').attr('src', info.pimg)
+$('.goodsInfo .goodsName').text(info.pname)
+$('.goodsInfo .price').text('￥' + info.pprice)
+}
+
+
+$('.addCart').click(async function(){
+    // console.log('我要添加购物车了')
+
+    // 判断是否登录
+    if ($.cookie('username')) {
+        console.log('用户登录')
+          
+        await axios.get(
+            'http://jx.xuzhixiang.top/ap/api/add-product.php',
+            {params:{
+                uid:uid,
+                pid:id,
+                pnum:1
+            }}
+        ).then(function(res){
+            console.log(res)
+        })
+        
+        
+
+    }else{
+        console.log('用户未登录')
+        window.location.href='./login.html'
+      }
+    })

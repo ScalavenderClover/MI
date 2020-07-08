@@ -138,16 +138,22 @@
                         //   $.post('../server/login.php', $(form).serialize(), res => {
                           $.get('http://jx.xuzhixiang.top/ap/api/login.php', $(form).serialize(), res => {
                             console.log(res)
-                            var result = JSON.stringify(res)
-                            console.log(result)
-                            var admin =res.username
-                            console.log(admin)
-                            if (result.code === 0) {
-                                console.log('登录失败')
+                            // var result = JSON.stringify(res)
+                            // console.log(result)
+                            var result = res.data
+                            
+                            
+                            if (res.code === 1) {
+                                console.log('登录成功')
+                                //设置cookie 
+                                $.cookie('username', result.username);
+                                //localStorage 存储用户信息
+                                localStorage.setItem('userInfo', JSON.stringify(result))
+                                 window.location.href = './index.html'
                             } else {
                             // 登录成功
-                            $.cookie('name', admin);
-                            // window.location.href = './index.html'
+                                console.log('登录失败')
+                           
                             }
                           }, 'json')
                         

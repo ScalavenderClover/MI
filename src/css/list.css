@@ -29,7 +29,7 @@
     background-color: white;
 }
 .box >ul >li:hover{
-    box-shadow: 5px 5px 5px 5px gray;
+    box-shadow:0 4px 16px 0 rgba(0,0,0,.15)
 }
 
 /* .box >ul>li >img{

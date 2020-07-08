@@ -72,7 +72,7 @@
                                 </div>
 
                                 <div class="account-register-phone-submit">
-                                    <button class="btn btn-primary btn-lg" style="width: 400px;background-color: #ff6700;border:none;text-align: center;" onclick="validate('codeI'),confirmBox()">立即注册</button>
+                                    <button class="btn btn-primary btn-lg" style="width: 400px;background-color: #ff6700;border:none;text-align: center;" onclick="validate('codeI')">立即注册</button>
                                 </div>
                             </div>
                         </form>
@@ -88,7 +88,7 @@
                                 <!-- <p class="account-info">请输入邮箱或手机号</p> -->
 
                                 <div class="account-mail-password">
-                                    <input type="password" class="account-mail-password-input" name="password" maxlength="50" placeholder="密码">
+                                    <input type="password" class="account-mail-password-input" name="password" maxlength="50" placeholder="密码" id="pass-e">
                                 </div>
                                 <!-- <p class="account-password-info">请输id入密码</p> -->
                                 <div class="account-mail-password2">
@@ -101,7 +101,7 @@
                                 </div>
 
                                 <div class="account-mail-submit">
-                                    <button class="btn btn-primary btn-lg" style="width: 400px;background-color: #ff6700;border:none;text-align: center;" onclick="validate('codeI2'),confirmBox()">立即注册</button>
+                                    <button class="btn btn-primary btn-lg" style="width: 400px;background-color: #ff6700;border:none;text-align: center;" onclick="validate('codeI2')">立即注册</button>
                                 </div>
                                 
                             </div>
@@ -110,7 +110,7 @@
                 </div>
                     
                 <div class="account-bottom clean" style="width: 400px;margin: 0 auto 10px;">
-                    <input type="checkbox" id="cbId"><a href="用户协议" class="fancybox">同意TP-Link注册协议</a>
+                    <input type="checkbox" id="cbId"><a href="用户协议" class="fancybox">同意用户注册协议</a>
                     <a class="account-bottom-register" href="./login.html" style="text-decoration: none;float: right;">立即登录</a>
                 </div>
             </div>
@@ -142,6 +142,7 @@
             window.onload=createCode(4,"code",'code2');
             // window.onload=createCode(4,"code2");
             var code ; //在全局定义验证码  
+            var repeatUser =true
             
             function createCode(len,tag,tag2){ 
                 code = "";  
@@ -188,7 +189,7 @@
             }, "请正确填写您的手机号码");
 
             $(function(){
-
+                
                 var flag = $("#register-p").validate({
                     onfocusout: function(element) { $(element).valid(); }, 
                     rules: {
@@ -239,38 +240,52 @@
                         var String = $(form).serialize()
                         var submitData=String.split('&')
                         console.log(submitData)
-                        let repeatUser 
-                         $.get('http://jx.xuzhixiang.top/ap/api/checkname.php',$(form).serialize(),res =>{
+                         
+                         $.ajax({
+                             type:'get',
+                             async:false,
+                             url:'http://jx.xuzhixiang.top/ap/api/checkname.php',
+                             dataType:'json',
+                             data:$(form).serialize(),
+                            success:function(res){
                             console.log(res.code)
                             
                             if(res.code == 1){
-                                window.repeatUser= false
+                                window.repeatUser = false
                                 
                             }else{
                                 window.repeatUser = true
                                 
                             }
-                        })
+
+                          }
+                         }
+                        )
 
                         console.log(repeatUser)
                         // 发送请求到后端
                           console.log('验证成功');
-                        //   $.post('../server/register.php', $(form).serialize(), res => {
-                        //     console.log(res)
-                        //     var result = JSON.stringify(res)
-                        //     console.log(result)
-                        //     var admin =res.username
-                        //     console.log(admin)
-                        //     if (result.code === 0) {
-                        //         console.log('登录失败')
-                        //     } else {
-                        //     // 登录成功
-                        //     $.cookie('name', admin);
-                        //     window.location.href = './index.html'
-                        //     }
-                        //   }, 'json')
+                        if(!repeatUser){
+                                $.get('http://jx.xuzhixiang.top/ap/api/reg.php', $(form).serialize(), res => {
+                                    console.log(res)
+                                    // var result = JSON.stringify(res)
+                                    // console.log(result)
+                                    // var admin =res.username
+                                    // console.log(admin)
+                                    if (res.code === 1) {
+                                        console.log('注册成功')
+                                        window.location.href = './login.html'
+                                    } else {
+                                    
+                                        console.log('注册失败')
+                                
+                                    }
+                                }, 'json')      
                         
+                        }else{
+                                alert('账号重复')
                         }
+                    }
                     
                 });
 
@@ -289,7 +304,7 @@
                         },
                         password2:{
                             required:true,
-                            equalTo:"#pass-p"
+                            equalTo:"#pass-e"
                         },
                         codeI2: 'required'
                         },
@@ -314,25 +329,49 @@
                         //    这个函数会在表单验证通过以后执行
                         submitHandler: function (form) {
                       
+                        $.ajax({
+                             type:'get',
+                             async:false,
+                             url:'http://jx.xuzhixiang.top/ap/api/checkname.php',
+                             dataType:'json',
+                             data:$(form).serialize(),
+                            success:function(res){
+                            console.log(res.code)
+                            
+                            if(res.code == 1){
+                                window.repeatUser = false
+                                
+                            }else{
+                                window.repeatUser = true
+                                
+                            }
+
+                          }
+                         }
+                        )
 
                         // 发送请求到后端
                           console.log('验证成功');
-                          $.post('../server/register.php', $(form).serialize(), res => {
-                            console.log(res)
-                            var result = JSON.stringify(res)
-                            console.log(result)
-                            var admin =res.username
-                            console.log(admin)
-                            if (res === 0) {
-                                console.log('注册失败')
-                                alert('注册失败')
-                            } else {
-                                console.log('注册成功')
-                                alert('注册成功')
-                            $.cookie('name',admin);
-                            window.location.href = './index.html'
-                            }
-                          }, 'json')
+                        if(!repeatUser){
+                                $.get('http://jx.xuzhixiang.top/ap/api/reg.php', $(form).serialize(), res => {
+                                    console.log(res)
+                                    // var result = JSON.stringify(res)
+                                    // console.log(result)
+                                    // var admin =res.username
+                                    // console.log(admin)
+                                    if (res.code === 1) {
+                                        console.log('注册成功')
+                                        window.location.href = './login.html'
+                                    } else {
+                                    
+                                        console.log('注册失败')
+                                
+                                    }
+                                }, 'json')      
+                        
+                        }else{
+                                alert('账号重复')
+                        }
                         
                         }
                     
