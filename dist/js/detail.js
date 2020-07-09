@@ -22,6 +22,7 @@ async function getGoodsInfo(){
 function bindHtml(info) {
 $('.goodsInfo img').attr('src', info.pimg)
 $('.goodsInfo .goodsName').text(info.pname)
+$('.goodsInfo .desc').text(info.pdesc)
 $('.goodsInfo .price').text('￥' + info.pprice)
 }
 

@@ -17,30 +17,6 @@ console.log($.cookie('name'));
     }
     )
 
-    var mySwiper = new Swiper ('.swiper-container', {
-        loop: true, // 循环模式选项
-        autoplay: {
-          delay: 1000
-        },
-        effect: 'fade',
-
-        //分页器
-        pagination: {
-          el: '.swiper-pagination',
-        },
-
-        //前进后退按钮
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
-
-        // 滚动条
-        // scrollbar: {
-        //   el: '.swiper-scrollbar',
-        // },
-      })
-
 
     getList()
 

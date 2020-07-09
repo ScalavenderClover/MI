@@ -12,12 +12,14 @@
     align-items: center;
 }
 .goodsInfo >.right{
-    flex: 1;
+    /* flex: 1;
     display: flex;
     justify-content: space-between;
-    flex-direction: column;
+    flex-direction: column; */
+    margin-top: 40px;
+    margin-left: 50px;
     height: 460px;
-    font-size: 40px;
+    
 }
 .goodsInfo >.right .addCart{
     width: 200px;
@@ -38,13 +40,17 @@
     color: #FF3232;
 }
 .goodsInfo >.right .goodsName{
-    font-size: 30px;
+    font-size: 24px;
     color: #333;
     letter-spacing: 0;
     line-height: 40px;
     font-weight: 400;
     margin: 0;
     padding-left: 50px;
+}
+.goodsInfo >.right .desc{
+    padding-left: 50px;
+    color: #b0b0b0;
 }
 .goodsInfo >.right .price{
     width: 100%;
@@ -54,4 +60,9 @@
     font-size: 24px;
     color: #FF3232;
     line-height: 40px;
+}
+
+.goodsInfo >.right .btn{
+    margin-top: 200px;
+    padding-left: 50px;
 }
